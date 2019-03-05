@@ -1,9 +1,10 @@
-# 🍔Eat-Da-Burger
+# 🍔Eat-Da-Burger-Sequel
 
 ####   :point_right: Click  **[>>>Here<<<](https://dashboard.heroku.com/apps/eatdaburger2-iw)**  Check APP demo.
 
 ![concert](./public/assets/img/animate.gif)
 
+Eat-Da-Burger-Sequel built with Node Express and Sequelize.
 * Eat-Da-Burger! is a restaurant app that lets users input the names of burgers they'd like to eat.
 
 * Whenever a user submits a burger, Eat-Da-Burger! will display the burger's name in the 'Check for your Burger' list.
@@ -18,10 +19,6 @@
 ## 🍔 V 2.0.0
 ![concert](./public/assets/img/scn2.png)
 ![concert](./public/assets/img/scn3.png)
-
-
-Eat-Da-Burger! built with Node Express and Sequelize
-
 
 ## Author
 * [Isaac Wu](https://github.com/squall2046)
