@@ -1,6 +1,6 @@
 # 🍔Eat-Da-Burger
 
-####   :point_right: Click  **[>>>Here<<<](https://eatdaburger-iw.herokuapp.com/)**  Check APP demo.
+####   :point_right: Click  **[>>>Here<<<](https://dashboard.heroku.com/apps/eatdaburger2-iw)**  Check APP demo.
 
 ![concert](./public/assets/img/animate.gif)
 
@@ -13,6 +13,9 @@
 * When the user check out, the system will ask for user's name initial, and then burger will move to the left side of the page.
 
 ![concert](./public/assets/img/scn.png)
+![concert](./public/assets/img/scn2.png)
+![concert](./public/assets/img/scn3.png)
+
 
 Eat-Da-Burger! built with Node Express and Sequelize
 
