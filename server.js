@@ -31,7 +31,7 @@ require("./routes/api-routes.js")(app);
 // =============================================================
 const PORT = process.env.PORT || 8080;
 
-db.sequelize.sync({ force: true }).then(() => {
+db.sequelize.sync({ force: false }).then(() => {
     app.listen(PORT, () => {
         console.log("PORT: ", PORT)
     });
