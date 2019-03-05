@@ -12,7 +12,10 @@
 
 * When the user check out, the system will ask for user's name initial, and then burger will move to the left side of the page.
 
+V 1.0.0
 ![concert](./public/assets/img/scn.png)
+
+V 2.0.0
 ![concert](./public/assets/img/scn2.png)
 ![concert](./public/assets/img/scn3.png)
 
