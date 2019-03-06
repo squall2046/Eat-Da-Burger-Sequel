@@ -8,18 +8,10 @@ $(document).ready(function () {
     event.preventDefault();
 
     const burgerInput = $("#burgerInput").val().trim();
-    // burger_name 写在Ajax POST 的 api 地址栏里了.
-    // devoured 写在 models>dbBurger 的defaultValue里了.
-    // 所以以下 newBurger 部分不要了.
-    // let newBurger = {
-    //   burger_name: burgerInput,
-    //   devoured: 0
-    //   // in DB, devoured is boolean: 0 is false; 1 is true
-    // };
+
 
     if (burgerInput.length < 1) {
       Swal.fire({
-        // background: '#fff url("/assets/img/burger-load.gif")',
         text: 'What burger would you like to have?',
         title: "Before Submit...",
         animation: false,
@@ -32,8 +24,7 @@ $(document).ready(function () {
       $.ajax({
         type: "POST",
         url: "/api/burger/" + burgerInput,
-        // data 就是 ajax 地址栏里的 burgerInput
-        // data: newBurger
+
       })
         .then(() => {
           location.reload();
@@ -81,40 +72,4 @@ $(document).ready(function () {
         });
     });
   };
-
-  //////////////// another way to POST new eater, if there are many column not only Name ////////////////
-  // function anotherNewEaterFunctionWay() {
-  //   let id = $(this).data("id");
-  //   console.log("id is: ", id);
-
-  //   let eaterInput = $("#eaterInput").val().trim();
-  //   let newEater = {
-  //     eater_name: eaterInput
-  //   }
-  //   console.log(newEater);
-
-  //   $.ajax("/api/eater/" + id, {
-  //     type: "POST",
-  //     data: newEater
-  //   })
-  //     .then(() => {
-  //       location.reload();
-  //     });
-  // };
-
-  //   let id = $(this).data("id");
-  //   console.log($(this).data);
-
-  //   let newState = {
-  //     devoured: true
-  //   };
-
-  //////////////// another way to PUT ////////////////
-  //   $.ajax("/api/state/" + id, {
-  //     type: "PUT",
-  //     data: newState
-  //   })
-  //     .then(() => {
-  //       location.reload();
-  //     });
 })
