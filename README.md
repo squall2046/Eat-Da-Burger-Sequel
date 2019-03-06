@@ -1,6 +1,6 @@
 # 🍔Eat-Da-Burger-Sequel
 
-####   :point_right: Click  **[>>>Here<<<](https://dashboard.heroku.com/apps/eatdaburger2-iw)**  Check APP demo.
+####   :point_right: Click  **[>>>Here<<<](https://eatdaburger2-iw.herokuapp.com/)**  Check APP demo.
 
 ![concert](./public/assets/img/animate.gif)
 
