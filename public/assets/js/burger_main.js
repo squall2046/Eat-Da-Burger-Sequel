@@ -36,7 +36,7 @@ $(document).ready(function () {
   function newEaterFn() {
     Swal.fire({
       title: 'Please Initial Here',
-      text: 'Confirm your order before signature.',
+      text: 'The order won\'t be placed without Initial 😊',
       imageUrl: '/assets/img/burger-load.gif',
       imageWidth: 100,
       imageHeight: 100,
@@ -53,23 +53,24 @@ $(document).ready(function () {
       console.log("init:", eaterInit.value);
       console.log("burgerId:", burgerId);
 
-      $.ajax({
-        type: "POST",
-        url: "/api/eater/" + eaterInit.value,
-        data: {foreignKey: burgerId}
-      }).then(
-        function (posts) {
-          console.log(posts);
-        });
+      if (eaterInit.value.length > 0) {
+        $.ajax({
+          type: "POST",
+          url: "/api/eater/" + eaterInit.value,
+          data: { foreignKey: burgerId }
+        }).then(
+          function (posts) {
+            console.log(posts);
+          });
 
-
-      $.ajax({
-        type: "PUT",
-        url: "/api/update/" + burgerId,
-      }).then(
-        function () {
-          location.reload();
-        });
+        $.ajax({
+          type: "PUT",
+          url: "/api/update/" + burgerId,
+        }).then(
+          function () {
+            location.reload();
+          });
+      }
     });
   };
 })
